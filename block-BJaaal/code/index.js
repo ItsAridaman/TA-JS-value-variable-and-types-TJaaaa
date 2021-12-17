@@ -16,8 +16,8 @@ let lastName = "Stark";
   - Alert message saying `I am [username] and my bio is [bio]`. Replace square brackets with the value of variable.
   - Alert the message `I'm Arya Stark of Winterfell` using the variable name firstName and lastName.
 */
-alert("I am ${username} and my bio is ${bio}")
-alert("I m ${firstName} ${lastName} of Winterfell")
+alert("I am" + " "+ username +" "+ "and my bio is" +" "+ bio)
+alert("I\'m" + " "+ firstName +" "+ lastName + " "+ "of winterfell")
 
 /* Do the following using string template literal
   - Alert message saying `I am [username] and my bio is [bio]`. Replace square brackets with the value of variable.
@@ -38,7 +38,8 @@ const taxPercent = 10;
   - Above message should be in two lines
 */
 
-alert(`the total amount is ${amount} \n the tax amount is (${amount}*${taxPercent}/100)`)
+alert(`the total amount is ${amount}
+the tax amount is ${amount*taxPercent/100}`)
 
 
 /* Use double quote and escape character:
@@ -47,4 +48,4 @@ alert(`the total amount is ${amount} \n the tax amount is (${amount}*${taxPercen
   `
   - Above message should be in two lines
 */
-alert("the total amount is ${amount} \n the tax amount is (${amount}*${taxPercent}/100)")
+alert("the total amount is" + " " + amount + "\n the tax amount is" + " " + (amount*taxPercent/100))
