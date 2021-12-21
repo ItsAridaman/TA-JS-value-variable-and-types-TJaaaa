@@ -71,28 +71,56 @@ else
 // 5. Convert the above code using`?` terniary operator
 let houseeName=(prompt(`what's your house name`));
 
-(houseeName==="stark")?(houseeName==="lannister")?alert("winter is coming"):alert("a lannister always pays his debt"):alert("all men must die");
+(houseeName==="stark")?alert("winter is coming"):(houseeName==="lannister")?alert("a lannister always pays his debt"):alert("all men must die");
 
 
 // Switch
 
 // 6. Write a program that takes the number of the month(1 - 12) and alert number of days in the month.
 
-let monthNumber=Number(prompt("enter the month"));
+let monthNumber=prompt("enter the month");
 
 switch(monthNumber)
 {
-  case 1:if ((monthNumber % 2)===0)
-  {
-    alert("31 days")
-    break; 
-  }
-  
-  case 2:if ((monthNumber % 2)!==0)
-  {
-  alert("30 days")
-  break;
-  }
+  case "january":
+    alert(`${monthNumber} has 31 days`);
+    break;
+    case "february":
+    alert(`${monthNumber} has 28 days`);
+    break;
+    case "march":
+    alert(`${monthNumber} has 31 days`);
+    break;
+    case "april":
+    alert(`${monthNumber} has 30 days`);
+    break;
+    case "may":
+    alert(`${monthNumber} has 31 days`);
+    break;
+    case "june":
+    alert(`${monthNumber} has 30 days`);
+    break;
+    case "july":
+    alert(`${monthNumber} has 31 days`);
+    break;
+    case "august":
+    alert(`${monthNumber} has 30 days`);
+    break;
+    case "september":
+    alert(`${monthNumber} has 31 days`);
+    break;
+    case "october":
+    alert(`${monthNumber} has 30 days`);
+    break;
+    case "november":
+    alert(`${monthNumber} has 31 days`);
+    break;
+    case "december":
+    alert(`${monthNumber} has 30 days`);
+    break;
+    default:
+      alert("enter a valid value")
+    
 }
 
 
@@ -118,8 +146,6 @@ else
 {
   alert(`your in-hand salary will be ${(customerSalary)-((customerSalary)*(30/100))}`)
 }
-
-
 
 
 
@@ -155,6 +181,26 @@ else if(studentMarks>30 && studentMarks<50)
 }
 else{
   alert("grade-D")
+}
+
+
+switch(studentMarks)
+{
+    case studentMarks > 100:
+    alert("marks cant be greater than 100");
+    break;
+    case studentMarks>80 && studentMarks<100:
+    alert("grade-A");
+    break;
+    case studentMarks>50 && studentMarks<80:
+    alert("grade-B");
+    break;
+    case studentMarks>30 && studentMarks<50:
+    alert("grade-C");
+    break;
+    default:
+      alert("grade-D")
+
 }
 
 
