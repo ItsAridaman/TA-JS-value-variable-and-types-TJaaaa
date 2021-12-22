@@ -29,6 +29,23 @@ for(i= 1;i<=10; i=i+1)
 
 // Calculate the sum of all numbers from 1 to 10.
 
+let sum=0;
+
+for(i=1;i<=10; i++)
+{
+  sum+=i;
+  }
+  console.log(sum);
 
 
 // Log all the values from 1 to 10 using while loop
+
+let number= 1;
+
+while(number < 10)
+{
+    console.log(number);
+    number++;
+}
+
+
