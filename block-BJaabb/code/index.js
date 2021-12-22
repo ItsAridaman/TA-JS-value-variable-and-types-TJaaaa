@@ -36,7 +36,7 @@ alert(`${sum}`)
 
 // 3. Complete the following code to make the output be 0 2 4 6 8 10?
 
-for (let j = 0; j <= 10; j++)
+for (let j = 0; j<= 10; j++)
 { 
     if(j % 2===0)
     {
@@ -47,22 +47,43 @@ for (let j = 0; j <= 10; j++)
 
 
 // 4. Print the odd numbers from 9 to 1 (both inclusive) using a for loop.
-let i;
-for(i=9; i<=9; i--)
+
+for(let i=9; i<=9; i--)
    {
-       if(i% 2!==0)
+       if(i % 2 !== 0)
        {
            console.log(i);
        }
    }
 
 // 5. Concat all the numbers from 5 to 0 (both inclusive) in descending order using a while loop. (543210)
+let fString ="";
+let initialValue=5;
 
- 
-  
+while(initialValue>=0)
+{
+    fString += initialValue;
+    initialValue--;
+} 
+  console.log(fString);
   
 
 // 6. Concat all the even numbers from 10 to 0 (both inclusive) in descending order using a while loop. (1086420)
+
+let evenString="";
+let initialEvennumber=10;
+
+while(initialEvennumber>=0)
+{
+    if(initialEvenValue % 2 === 0)
+    {
+        evenString +=initialEvennumber;
+    }
+    initialEvennumber--;
+}
+console.log(evenString);
+
+
 
 // Comparisoin
 
@@ -79,15 +100,13 @@ Example:
 
 */
 
-let numM=prompt("enter the first value"), numN=prompt("enter the second value");
-if(numM == num2)
+let numP= +prompt("enter the first number");
+let numQ= +prompt("enter the second number");
+
+if (isNaN(numP) || isNaN(numQ))
 {
-    alert(`true`)
-}
-else if(numM==="true", "null", "undefined" ||numN==="true", "null", "undefined" )
-{
-alert(`enter a valid input`)
+    alert(`enter a valid value`)
 }
 else{
-    alert(`false`)
+    alert(numP===numQ);
 }
