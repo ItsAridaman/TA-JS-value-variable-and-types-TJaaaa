@@ -15,13 +15,28 @@ var bank_balance = 303.91;
 var amount = 0;
 // your code goes here
 
-for (amount=0 ;amount<bank_balance && (bank_balance-amount)>PHONE_PRICE;amount+PHONE_PRICE)
+while(amount < bank_balance)
 {
     amount+=PHONE_PRICE;
-    console.log(amount);
+    if (amount < SPENDING_THRESHOLD)
+    {
+        amount+=ACCESSORY_PRICE;
+    }
 }
 
+let tax = amount*TAX_RATE;
+let taxAmount=amount+tax;
 
+console.log(`${taxAmount}`);
+
+if (taxAmount < bank_balance)
+{
+    console.log(`you can afford it`)
+}
+else
+{
+    console.log(`you can't afford it`)
+}
 
 
 
