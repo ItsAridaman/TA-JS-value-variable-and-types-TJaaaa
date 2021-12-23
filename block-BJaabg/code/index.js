@@ -15,4 +15,15 @@ var bank_balance = 303.91;
 var amount = 0;
 // your code goes here
 
+for (amount=0 ;amount<bank_balance && (bank_balance-amount)>PHONE_PRICE;amount+PHONE_PRICE)
+{
+    amount+=PHONE_PRICE;
+    console.log(amount);
+}
+
+
+
+
+
+
 // ⛑ Answer of the above will `$334.76`.
